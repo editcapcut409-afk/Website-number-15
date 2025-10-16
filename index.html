@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Happy Birthday Madam ji ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#ffdbe8;
+    --bg2:#ffd0ef;
+    --card:#fff6fb;
+    --accent:#ff5c8a;
+    --glass: rgba(255,255,255,0.55);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:28px 12px 48px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg,var(--bg1),var(--bg2));
+    min-height:100vh;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .title{ text-align:center; margin-top:6px; }
+  .title h1{
+    font-size:36px; margin:0; line-height:1.02;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  }
+  .subtitle{ margin-top:6px; opacity:0.95; font-size:15px; color:#fff5; }
+
+  /* three photo cards row */
+  .cards{
+    width:100%; max-width:980px;
+    display:flex; gap:18px; justify-content:center;
+    margin:18px 0;
+  }
+  .card{
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.93));
+    color:#333;
+    width:30%;
+    min-width:160px;
+    border-radius:18px;
+    padding:12px;
+    box-shadow: 0 14px 30px rgba(255,80,120,0.06);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .card .label{ color:rgba(0,0,0,0.35); font-weight:700; margin-bottom:8px; }
+  .thumb{
+    width:110px; height:110px; border-radius:14px;
+    background:#eee; overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .choose{
+    margin-top:12px; background:transparent; border-radius:10px;
+    padding:10px 14px; border:none; font-weight:700;
+    color:#ff5c8a; cursor:pointer;
+    box-shadow: 0 8px 18px rgba(255,80,120,0.06);
+  }
+
+  /* central gift */
+  .gift-wrap{
+    margin:8px 0 16px;
+    width:84px; height:84px; border-radius:18px;
+    background:linear-gradient(180deg,#fff0f7,#ffdff0);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 18px 30px rgba(255,60,120,0.08); cursor:pointer;
+  }
+  .gift{ font-size:40px; transform:translateY(-2px); }
+
+  /* message box */
+  .message{
+    width:92%; max-width:760px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.88));
+    border-radius:16px; padding:22px; margin-top:12px;
+    color:#333; text-align:center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+  }
+  .message h2{
+    font-family: 'Great Vibes', cursive; font-size:28px; margin:0 0 8px 0;
+    color:#ff5c8a;
+  }
+  .message p{ margin:0; line-height:1.5; color:#5d3b4a; opacity:0.95; }
+
+  .final{
+    margin-top:18px; font-weight:700; font-size:18px; color:#fff;
+    text-align:center;
+    text-shadow: 0 6px 22px rgba(255,90,120,0.18);
+  }
+  .final .glow{
+    display:inline-block; padding:10px 18px; border-radius:26px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    box-shadow: 0 12px 38px rgba(255,120,150,0.08);
+    animation: softGlow 2.6s infinite;
+  }
+  @keyframes softGlow{
+    0%{ box-shadow: 0 10px 26px rgba(255,80,130,0.06) }
+    50%{ box-shadow: 0 18px 38px rgba(255,80,130,0.14) }
+    100%{ box-shadow: 0 10px 26px rgba(255,80,130,0.06) }
+  }
+
+  /* floating hearts/stars (always visible) */
+  .float-wrap{ position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:5; }
+  .float{
+    position:absolute; font-size:28px; opacity:0.9;
+    will-change: transform, opacity; filter: drop-shadow(0 6px 10px rgba(0,0,0,0.06));
+    animation: floatAnim linear infinite;
+  }
+  @keyframes floatAnim{
+    0%{ transform: translateY(110vh) scale(0.8) rotate(0deg); opacity:0.95 }
+    100%{ transform: translateY(-20vh) scale(1.05) rotate(360deg); opacity:0.02 }
+  }
+
+  /* controls */
+  .controls{ display:flex; gap:12px; margin-top:16px; }
+  .btn{
+    padding:10px 14px; border-radius:26px; border:none; font-weight:700; cursor:pointer;
+    background: linear-gradient(90deg,#ff6ea2,#ff407a); color:white;
+    box-shadow:0 8px 20px rgba(255,80,120,0.12);
+  }
+
+  @media(max-width:880px){
+    .cards{ gap:12px; }
+    .card{ width:30%; min-width:120px; padding:10px; }
+    .thumb{ width:92px; height:92px; border-radius:12px; }
+    .title h1{ font-size:34px }
+  }
+</style>
+</head>
+<body>
+
+  <div class="title">
+    <h1>Happy Birthday<br/>Madam ji ❤️</h1>
+    <div class="subtitle">Aap meri duniya ho…</div>
+  </div>
+
+  <div class="cards" id="cards">
+    <div class="card">
+      <div class="label">Photo 1</div>
+      <div class="thumb"><img id="img1" src="assets/photo1.jpg" alt="photo1"></div>
+      <button class="choose" onclick="choosePhoto(1)">Choose</button>
+    </div>
+    <div class="card">
+      <div class="label">Photo 2</div>
+      <div class="thumb"><img id="img2" src="assets/photo2.jpg" alt="photo2"></div>
+      <button class="choose" onclick="choosePhoto(2)">Choose</button>
+    </div>
+    <div class="card">
+      <div class="label">Photo 3</div>
+      <div class="thumb"><img id="img3" src="assets/photo3.jpg" alt="photo3"></div>
+      <button class="choose" onclick="choosePhoto(3)">Choose</button>
+    </div>
+  </div>
+
+  <div class="gift-wrap" id="giftBtn" title="Open gift">
+    <div class="gift">🎁</div>
+  </div>
+
+  <div class="message">
+    <h2>Mere Dil Ki Baat ❤️</h2>
+    <p id="messageText">
+      Aap mere liye sirf ek dost nahi, balki meri zindagi ka wo hissa ho jo mujhe hamesha sambhalta hai.
+      Aapki muskaan meri duniya roshan karti hai aur aapki baatein meri zindagi ka sukoon hai.
+      Aap sirf important nahi ho, aap meri duaaon ka sabse khoobsurat jawaab ho.
+    </p>
+  </div>
+
+  <div class="final">
+    <span class="glow">Happy Birthday Madam ji ❤️ Aap meri duniya ho…</span>
+  </div>
+
+  <div class="controls">
+    <button class="btn" id="playBtn">Play Music</button>
+    <button class="btn" id="chooseMusicBtn">Choose Music</button>
+  </div>
+
+  <!-- floating container (hearts & stars always) -->
+  <div class="float-wrap" id="floatWrap"></div>
+
+  <!-- audio -->
+  <audio id="audio" src="assets/khairiyat.mp3" preload="auto"></audio>
+
+<script>
+  // spawn continuous floating emojis (hearts + stars) across the screen
+  (function(){
+    const symbols = ['❤️','💖','💘','💫','✨','🌟','💝'];
+    const wrap = document.getElementById('floatWrap');
+
+    function createFloat(leftPct, delay, size){
+      const d = document.createElement('div');
+      d.className='float';
+      d.textContent = symbols[Math.floor(Math.random()*symbols.length)];
+      d.style.left = leftPct + 'vw';
+      d.style.fontSize = (18 + (size||0)) + 'px';
+      const dur = 7000 + Math.random()*7000;
+      d.style.animationDuration = dur + 'ms';
+      d.style.animationDelay = (delay||0) + 'ms';
+      wrap.appendChild(d);
+      setTimeout(()=> d.remove(), dur + (delay||0) + 200);
+    }
+
+    // continuous emitter
+    setInterval(()=>{
+      // spawn 3 floats scattered
+      createFloat(Math.random()*90 + 2, 0, Math.random()*18);
+    }, 900);
+
+  })();
+
+  // choose photo action (for demo we just flash the card)
+  function choosePhoto(n){
+    const el = document.getElementById('img'+n);
+    el.animate([{ transform:'scale(1)'},{ transform:'scale(0.96)'},{ transform:'scale(1)'}], { duration:380 });
+    // For future: implement file picker to replace that image locally
+  }
+
+  // gift click -> emoji rain burst
+  function spawnEmoji(x){
+    const emojis = ['❤️','😘','🤗','💝','🌟','✨'];
+    for(let i=0;i<18;i++){
+      setTimeout(()=>{
+        const e = document.createElement('div');
+        e.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+        e.style.position='fixed';
+        e.style.zIndex=9999;
+        e.style.left = (x || (Math.random()*100)) + 'vw';
+        e.style.top = '-6vh';
+        e.style.fontSize = (18 + Math.random()*22) + 'px';
+        e.style.pointerEvents='none';
+        document.body.appendChild(e);
+        const dur = 2200 + Math.random()*1400;
+        const rot = (Math.random()>0.5?1:-1)*(30 + Math.random()*160);
+        e.animate([
+          { transform:`translateY(-6vh) rotate(0deg) scale(0.9)`, opacity:1 },
+          { transform:`translateY(110vh) rotate(${rot}deg) scale(1.05)`, opacity:0.02 }
+        ], { duration: dur, easing:'cubic-bezier(.2,.9,.2,1)'});
+        setTimeout(()=> e.remove(), dur+80);
+      }, i*60);
+    }
+  }
+  document.getElementById('giftBtn').addEventListener('click', function(ev){
+    spawnEmoji((ev.clientX/window.innerWidth)*100);
+    this.animate([{ transform:'translateY(0)'},{ transform:'translateY(-8px)'},{ transform:'translateY(0)'}], { duration:380 });
+  });
+
+  // try autoplay (many mobile browsers block audible autoplay): fallback to user gesture
+  (function(){
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('playBtn');
+    const chooseBtn = document.getElementById('chooseMusicBtn');
+
+    async function tryAutoplay(){
+      try{
+        await audio.play();
+        playBtn.textContent='Pause Music';
+      }catch(err){
+        // blocked
+        playBtn.textContent='Play Music';
+      }
+    }
+    tryAutoplay();
+
+    function unlockAudioOnce(){
+      audio.play().then(()=> { playBtn.textContent='Pause Music'; }).catch(()=>{});
+      window.removeEventListener('touchstart', unlockAudioOnce);
+      window.removeEventListener('click', unlockAudioOnce);
+    }
+    window.addEventListener('touchstart', unlockAudioOnce, { once:true });
+    window.addEventListener('click', unlockAudioOnce, { once:true });
+
+    playBtn.addEventListener('click', ()=>{
+      if(audio.paused) audio.play().then(()=> playBtn.textContent='Pause Music').catch(()=>{});
+      else { audio.pause(); playBtn.textContent='Play Music'; }
+    });
+
+    chooseBtn.addEventListener('click', ()=>{
+      const inp = document.createElement('input'); inp.type='file'; inp.accept='audio/*';
+      inp.onchange = e => {
+        const f = e.target.files[0]; if(!f) return;
+        audio.src = URL.createObjectURL(f);
+        audio.play().then(()=> playBtn.textContent='Pause Music').catch(()=>{});
+      };
+      inp.click();
+    });
+  })();
+
+  // small accessibility: keyboard 'g' triggers gift (for testing on desktop)
+  window.addEventListener('keydown', e => { if(e.key.toLowerCase()==='g') document.getElementById('giftBtn').click(); });
+</script>
+</body>
+</html>
